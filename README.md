@@ -3,7 +3,7 @@
 Eine Bildungswebsite über Dickhäuter (Elefanten und Nashörner) erstellt als praktisches Projekt für HTML/CSS Grundlagen M293.
 
 ## 🔗 Live-System
-`https://jesterecho.github.io/M293-Tierwelt/index.html`
+[https://jesterecho.github.io/M293-Tierwelt/index.html](https://jesterecho.github.io/M293-Tierwelt/index.html)
 
 ## 🎯 Thema & Zielgruppe
 
@@ -77,7 +77,7 @@ projekt-tierwelt/
 - **🗺️ Kartenintegration** - Vorbereitung für eingebettete Lebensraum-Karten
 
 ### CSS-Techniken:
-- **CSS Grid & Flexbox** - Moderne Layout-Systeme
+- **CSS Grid & Flexbox** - Aktuelle Layout-Systeme
 - **Media Queries** - Responsive Breakpoints für verschiedene Bildschirmgrößen
 - **Strukturierte Klassennamen** - Übersichtliche Namenskonventionen
 

@@ -1,0 +1,483 @@
+/* Reset und Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    border-bottom: 3px solid #34495e;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #34495e;
+    border: 1px solid #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main Content */
+main {
+    min-height: calc(100vh - 200px);
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #ddd;
+}
+
+.welcome h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Teaser Cards */
+.teasers {
+    margin: 3rem 0;
+}
+
+.teaser-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.teaser-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    text-align: center;
+}
+
+.teaser-card:hover {
+    border-color: #3498db;
+}
+
+.teaser-image {
+    margin-bottom: 1.5rem;
+}
+
+.teaser-image .placeholder {
+    font-size: 3rem;
+    display: block;
+}
+
+.teaser-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.teaser-card p {
+    margin-bottom: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #3498db;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Content Pages Styles */
+.content-header {
+    background-color: #c0392b;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.content-header.nashörner {
+    background-color: #8e44ad;
+}
+
+.content-header.elefanten {
+    background-color: #27ae60;
+}
+
+.content-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.info-section {
+    background: white;
+    padding: 2rem;
+    border: 1px solid #ddd;
+}
+
+.info-section h3 {
+    color: #27ae60;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 0.5rem;
+}
+
+.nashörner .info-section h3 {
+    color: #8e44ad;
+    border-bottom-color: #8e44ad;
+}
+
+.info-section h4 {
+    color: #2c3e50;
+    margin: 1.5rem 0 0rem 0;
+}
+
+/* Map Section */
+.map-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.map-section h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.map-placeholder {
+    background: white;
+    border: 2px dashed #3498db;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #3498db;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+.nashörner th {
+    background-color: #8e44ad;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f0f8ff;
+}
+
+/* Lists */
+ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background: #f9f9f9;
+    padding: 2rem;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-group textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Gallery Styles */
+.gallery {
+    margin: 3rem 0;
+}
+
+.gallery h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.gallery-item:hover {
+    border-color: #3498db;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+}
+
+.placeholder-image {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+}
+
+.gallery-item p {
+    font-weight: 500;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 3px solid #34495e;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: #3498db;
+    font-size: 1.1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .teaser-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .welcome {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .teaser-card,
+    .info-section,
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .content-header {
+        padding: 2rem 0;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 0.8rem 0.5rem;
+    }
+}

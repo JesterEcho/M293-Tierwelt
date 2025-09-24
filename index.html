@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tierwelt</title>
+    <title>Dickhäuter Welt - Startseite</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <h1>Ich bin ein Titel</h1>
-    <h2>Ich bin ein Untertitel</h2>
-    <p>Ich bin ein Absatz</p>
-    <img src="./assets/image1.jpg" alt="Ein Beispielbild" width="300" height="200">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Dickhäuter Welt</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/elefanten.html">Elefanten</a></li>
+                    <li><a href="pages/nashoerner.html">Nashörner</a></li>
+                    <li><a href="kontakt/impressum.html">Impressum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Willkommen in der Welt der Dickhäuter</h1>
+                <p>Entdecken Sie die faszinierenden Giganten unserer Erde - Elefanten und Nashörner</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Willkommen Text -->
+            <section class="welcome">
+                <h2>Die majestätischen Dickhäuter</h2>
+                <p>Dickhäuter, auch Pachydermata genannt, sind einige der beeindruckendsten Tiere unseres Planeten.
+                    Mit ihrer robusten Haut und ihrer imposanten Grösse haben sie Menschen seit jeher fasziniert.
+                    Auf dieser Website erfahren Sie alles über die beiden bekanntesten Vertreter: Elefanten und
+                    Nashörner.</p>
+            </section>
+
+            <!-- Teaser Sektion -->
+            <section class="teasers">
+                <div class="teaser-grid">
+                    <div class="teaser-card">
+                        <div class="teaser-image">
+                            <span class="placeholder">🐘</span>
+                        </div>
+                        <h3>Elefanten</h3>
+                        <p>Die grössten Landtiere der Erde mit ihren charakteristischen Rüsseln und der
+                            aussergewöhnlichen Intelligenz.</p>
+                        <a href="pages/elefanten.html" class="btn">Mehr erfahren</a>
+                    </div>
+
+                    <div class="teaser-card">
+                        <div class="teaser-image">
+                            <span class="placeholder">🦏</span>
+                        </div>
+                        <h3>Nashörner</h3>
+                        <p>Gepanzerte Giganten mit ihren markanten Hörnern, die seit Millionen von Jahren unsere Erde
+                            bewohnen.</p>
+                        <a href="pages/nashoerner.html" class="btn">Mehr erfahren</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="pages/elefanten.html">Elefanten</a></li>
+                        <li><a href="pages/nashoerner.html">Nashörner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><a href="kontakt/impressum.html">Impressum</a></li>
+                        <li><a href="mailto:info@dickhaeuter-welt.ch">E-Mail</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Weiteres</h4>
+                    <p>© 2025 Dickhäuter Welt</p>
+                    <p>Bildungswebsite über Dickhäuter</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

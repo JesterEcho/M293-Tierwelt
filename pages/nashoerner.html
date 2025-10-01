@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nashörner - Dickhäuter Welt</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
 </head>
 
 <body>
@@ -47,11 +51,21 @@
 
                     <h4>Besondere Eigenschaften:</h4>
                     <ul>
-                        <li>Dicke, gepanzerte Haut bis zu 5cm stark</li>
-                        <li>Ein oder zwei Hörner aus Keratin</li>
-                        <li>Ausgezeichneter Geruchs- und Hörsinn</li>
-                        <li>Können bis zu 50 km/h schnell laufen</li>
-                        <li>Schlechtes Sehvermögen</li>
+                        <li><span class="highlight">Dicke, gepanzerte Haut</span> bis zu 5cm stark</li>
+                        <li>Ein oder zwei Hörner aus <em>Keratin</em>
+                            <ul>
+                                <li>Afrikanische Arten: meist zwei Hörner</li>
+                                <li>Asiatische Arten: meist ein Horn</li>
+                                <li>Wachsen das ganze Leben lang</li>
+                            </ul>
+                        </li>
+                        <li><strong class="success">Ausgezeichneter Geruchs- und Hörsinn</strong></li>
+                        <li>Können bis zu <strong class="important">50 km/h</strong> schnell laufen</li>
+                        <li>Schlechtes Sehvermögen
+                            <ul>
+                                <li>Kurzsichtig</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
 
@@ -62,10 +76,21 @@
 
                     <h4>Verhaltensmuster:</h4>
                     <ul>
-                        <li>Meist nachtaktiv und in der Dämmerung aktiv</li>
-                        <li>Verbringen den Tag im Schatten oder im Schlammbad</li>
+                        <li>Meist <em>nachtaktiv</em> und in der Dämmerung aktiv
+                            <ul>
+                                <li>Vermeiden Tageshitze</li>
+                                <li>Beste Sicht in der Dämmerung</li>
+                            </ul>
+                        </li>
+                        <li>Verbringen den Tag im Schatten oder im <span class="highlight">Schlammbad</span>
+                            <ul>
+                                <li>Schutz vor Insekten</li>
+                                <li>Kühlung der Haut</li>
+                                <li>Sonnenschutz</li>
+                            </ul>
+                        </li>
                         <li>Kommunizieren über verschiedene Lautäusserungen</li>
-                        <li>Mütter sind sehr beschützend gegenüber ihren Kälbern</li>
+                        <li><strong class="success">Mütter sind sehr beschützend</strong> gegenüber ihren Kälbern</li>
                     </ul>
 
                     <p><strong>Ernährung:</strong> Nashörner sind reine Pflanzenfresser und können täglich
@@ -76,12 +101,15 @@
             <!-- Karte Lebensraum -->
             <section class="map-section">
                 <h3>Lebensraum der Nashörner</h3>
-                <div class="map-placeholder">
-                    <p>Hier würde eine eingebettete Karte mit den Lebensräumen der Nashörner stehen<br>
-                        (Afrika und Asien - stark fragmentierte Gebiete)</p>
-                </div>
-                <p><em>Nashörner leben in den Savannen, Grasländern und tropischen Wäldern Afrikas und Asiens.
-                        Ihre Lebensräume sind heute stark fragmentiert und geschrumpft.</em></p>
+                <div id="rhino-map" class="leaflet-map"></div>
+                <p><em>Interaktive Karte der kritischen Nashörner-Schutzgebiete weltweit. 
+                    Nashörner leben in stark fragmentierten Lebensräumen in Afrika und Asien. 
+                    Klicken Sie auf die Marker für Informationen zu den einzelnen Arten und Schutzgebieten.</em></p>
+                
+                <blockquote>
+                    <p>Nashörner sind lebende Dinosaurier - sie haben sich in den letzten 50 Millionen Jahren kaum verändert und sind ein wichtiger Teil unseres natürlichen Erbes.</p>
+                    <cite>— <a href="../kontakt/impressum.html#zitat-quellen">WWF Nashornschutz-Initiative</a></cite>
+                </blockquote>
             </section>
 
             <!-- Arten Tabelle -->
@@ -144,16 +172,36 @@
                     <div>
                         <h4>Hauptbedrohungen:</h4>
                         <ul>
-                            <li><strong>Wilderei:</strong> Hörner werden in der traditionellen Medizin verwendet</li>
-                            <li><strong>Lebensraumverlust:</strong> Landwirtschaft und Urbanisierung</li>
+                            <li><strong class="important">Wilderei:</strong> Hörner werden in der traditionellen Medizin verwendet
+                                <ul>
+                                    <li>Falsche Heilversprechen</li>
+                                    <li>Hohe Schwarzmarktpreise</li>
+                                </ul>
+                            </li>
+                            <li><strong>Lebensraumverlust:</strong> Landwirtschaft und Urbanisierung
+                                <ul>
+                                    <li>Fragmentierung der Lebensräume</li>
+                                    <li>Konflikte mit Menschen</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div>
                         <h4>Schutzmassnahmen:</h4>
                         <ul>
-                            <li><strong>Nationalparks:</strong> Geschützte Gebiete und Ranger</li>
-                            <li><strong>Zuchtprogramme:</strong> In Zoos und Reservaten</li>
-                            <li><strong>Hornentfernung:</strong> Präventive Massnahme gegen Wilderei</li>
+                            <li><strong class="success">Nationalparks:</strong> Geschützte Gebiete und Ranger
+                                <ul>
+                                    <li>24/7 Überwachung</li>
+                                    <li>Speziell ausgebildete Anti-Wilderei-Einheiten</li>
+                                </ul>
+                            </li>
+                            <li><strong>Zuchtprogramme:</strong> In Zoos und Reservaten
+                                <ul>
+                                    <li>Erhaltung der genetischen Vielfalt</li>
+                                    <li>Wiederauswilderung</li>
+                                </ul>
+                            </li>
+                            <li><span class="highlight">Hornentfernung:</span> Präventive Massnahme gegen Wilderei</li>
                         </ul>
                     </div>
                 </div>
@@ -206,6 +254,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <!-- Custom Maps JavaScript -->
+    <script src="../js/maps.js"></script>
 </body>
 
 </html>

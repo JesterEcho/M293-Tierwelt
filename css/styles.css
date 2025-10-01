@@ -120,10 +120,15 @@ main {
     border: 1px solid #ddd;
     padding: 2rem;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .teaser-card:hover {
     border-color: #3498db;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .teaser-image {
@@ -156,11 +161,14 @@ main {
     text-decoration: none;
     font-weight: 600;
     border: 1px solid #3498db;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
     background-color: #2980b9;
     border-color: #2980b9;
+    transform: translateY(-2px);
 }
 
 /* Content Pages Styles */
@@ -195,6 +203,8 @@ main {
     background: white;
     padding: 2rem;
     border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .info-section h3 {
@@ -237,6 +247,63 @@ main {
     margin: 1rem 0;
     font-size: 1rem;
     color: #3498db;
+    border-radius: 8px;
+}
+
+/* Echte Karte */
+.map-container {
+    margin: 1rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* Leaflet Karten Styles */
+.leaflet-map {
+    height: 450px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin: 1rem 0;
+}
+
+.legend {
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 12px 15px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #555;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.legend h4 {
+    margin: 0 0 8px;
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Leaflet Watermark ausblenden */
+.leaflet-control-attribution {
+    display: none !important;
 }
 
 /* Table Styles */
@@ -246,6 +313,9 @@ table {
     margin: 2rem 0;
     background: white;
     border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 th,
@@ -281,6 +351,77 @@ ul {
 
 li {
     margin-bottom: 0.3rem;
+}
+
+/* Verschachtelte Listen */
+ul ul {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+ul ul li {
+    list-style-type: circle;
+}
+
+/* Zitate */
+blockquote {
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid #3498db;
+    background-color: #f8f9fa;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+    text-align: center;
+    max-width: 700px;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 3rem;
+    color: #3498db;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+blockquote p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: normal;
+}
+
+/* Hervorhebungen */
+.highlight {
+    background-color: #fff3cd;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.important {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.success {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Versetzte Anordnung */
+.offset-content {
+    position: relative;
+    transform: translateX(20px);
+    margin-left: 2rem;
 }
 
 /* Contact Form Styles */
@@ -343,10 +484,14 @@ li {
     border: 1px solid #ddd;
     padding: 1.5rem;
     text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .gallery-item:hover {
     border-color: #3498db;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .gallery-item img {
@@ -355,6 +500,7 @@ li {
     object-fit: cover;
     margin-bottom: 1rem;
     border: 1px solid #eee;
+    border-radius: 8px;
 }
 
 .placeholder-image {
@@ -390,7 +536,7 @@ footer {
 
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: #3498db;
+    color: white;
     font-size: 1.1rem;
 }
 

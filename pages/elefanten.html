@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elefanten - Dickhäuter Welt</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
 </head>
 
 <body>
@@ -47,11 +51,17 @@
 
                     <h4>Besondere Eigenschaften:</h4>
                     <ul>
-                        <li>Aussergewöhnliche Intelligenz und Gedächtnis</li>
-                        <li>Komplexe Sozialstrukturen</li>
-                        <li>Vielseitig einsetzbarer Rüssel mit über 40.000 Muskeln</li>
+                        <li><span class="highlight">Aussergewöhnliche Intelligenz</span> und Gedächtnis</li>
+                        <li>Komplexe Sozialstrukturen
+                            <ul>
+                                <li>Matriarchale Führung</li>
+                                <li>Familienbande über Generationen</li>
+                                <li>Rituale und Traditionen</li>
+                            </ul>
+                        </li>
+                        <li>Vielseitig einsetzbarer Rüssel mit über <strong class="important">40.000 Muskeln</strong></li>
                         <li>Können bis zu 150 Liter Wasser pro Tag trinken</li>
-                        <li>Kommunizieren auch über Infraschall</li>
+                        <li>Kommunizieren auch über <em>Infraschall</em></li>
                     </ul>
                 </div>
 
@@ -62,9 +72,19 @@
 
                     <h4>Sozialverhalten:</h4>
                     <ul>
-                        <li>Starke Familienbande und gegenseitige Hilfe</li>
-                        <li>Trauern um verstorbene Familienmitglieder</li>
-                        <li>Komplexe Kommunikation durch Laute und Körpersprache</li>
+                        <li><strong>Starke Familienbande</strong> und gegenseitige Hilfe
+                            <ul>
+                                <li>Schutz der Jungen durch die ganze Herde</li>
+                                <li>Teilen von Nahrung und Wasser</li>
+                            </ul>
+                        </li>
+                        <li>Trauern um verstorbene Familienmitglieder
+                            <ul>
+                                <li>Besuchen Knochen verstorbener Verwandter</li>
+                                <li>Zeigen Verhaltensweisen der Trauer</li>
+                            </ul>
+                        </li>
+                        <li><span class="success">Komplexe Kommunikation</span> durch Laute und Körpersprache</li>
                         <li>Gemeinsame Aufzucht der Jungen</li>
                     </ul>
 
@@ -76,12 +96,14 @@
             <!-- Karte Lebensraum -->
             <section class="map-section">
                 <h3>Lebensraum der Elefanten</h3>
-                <div class="map-placeholder">
-                    <p>Hier würde eine eingebettete Karte mit den Lebensräumen der Elefanten stehen<br>
-                        (Hauptsächlich Afrika und Asien)</p>
-                </div>
-                <p><em>Elefanten leben hauptsächlich in den Savannen, Wäldern und Graslandschaften Afrikas sowie in den
-                        tropischen Wäldern Asiens.</em></p>
+                <div id="elephant-map" class="leaflet-map"></div>
+                <p><em>Interaktive Karte der wichtigsten Elefanten-Lebensräume in Afrika und Asien. 
+                    Klicken Sie auf die Marker für detaillierte Informationen zu den einzelnen Schutzgebieten.</em></p>
+                
+                <blockquote>
+                    <p>Ein Elefant vergisst nie - dieses Sprichwort hat einen wahren Kern. Elefanten haben ein ausgezeichnetes Gedächtnis und können sich selbst nach Jahrzehnten an bestimmte Orte, Personen und Ereignisse erinnern.</p>
+                    <cite>— Elefantenforscher <a href="../kontakt/impressum.html#zitat-quellen">Dr. Joyce Poole</a></cite>
+                </blockquote>
             </section>
 
             <!-- Arten Tabelle -->
@@ -177,6 +199,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <!-- Custom Maps JavaScript -->
+    <script src="../js/maps.js"></script>
 </body>
 
 </html>

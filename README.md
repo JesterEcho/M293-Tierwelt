@@ -42,6 +42,8 @@ projekt-tierwelt/
 │    └── styles.css          # Zentrales Stylesheet
 ├── doc/
 │   └── wireframe.pdf           # Entwurfsskizzen
+├── js/
+│   └── maps.js              # JavaScript für interaktive Karten
 ├── kontakt/
 │   └── impressum.html          # Impressum und Kontakt
 ├── pages/
@@ -59,60 +61,81 @@ projekt-tierwelt/
 ### Technische Ressourcen:
 - **W3Schools HTML** - HTML-Strukturen und semantische Tags
 - **W3Schools CSS** - Styling, Flexbox, Grid und responsive Design
+- **Leaflet.js** - Open-Source JavaScript Bibliothek für interaktive Karten
 - **code.makery Tutorial** - Grundlagen für HTML/CSS Entwicklung
 
 ### Design & Assets:
 - **Unicode-Emojis** - Für symbolische Darstellungen (lizenzfrei)
 - **System-Schriftarten** - Arial, sans-serif (systemabhängig)
 - **CSS-Farben** - Selbst definierte Farbpalette
-- **Pexels** - Kostenlose, lizenzfreie Tierfotos
+- **Pexels** (pexels.com) - Kostenlose, lizenzfreie Tierfotos
+- **OpenStreetMap** - Freie Kartendaten für Lebensraum-Darstellung
+- **pointhi/leaflet-color-markers** - Farbige Marker-Icons für Kartendarstellung
+
+### Zitat-Quellen:
+- **Dr. Joyce Poole** (ElephantVoices.org) - Elefantenforscherin und Verhaltensbiologin
+- **WWF Nashornschutz-Initiative** (WWF.org) - Weltweite Naturschutzorganisation
+- **Robert Green Ingersoll** - Amerikanischer Anwalt und Redner (1833-1899)
 
 ## ✨ Besonderheiten/Extras
 
 ### Implementierte Features:
 - **📱 Responsive Design** - Funktioniert auf Desktop, Tablet und Smartphone
-- **🎨 Klassisches CSS-Design** - Saubere Gestaltung ohne Übereffekte
+- **🎨 Modernes CSS-Design** - Saubere Gestaltung mit Rundungen und Hover-Effekten
 - **🖼️ Galerie-Sektion** - Grid-Layout für Bilddarstellungen
-- **📧 Kontaktformular** - Vollständiges HTML-Formular (noch nicht funktional)
-- **🗺️ Kartenintegration** - Vorbereitung für eingebettete Lebensraum-Karten
+- **📧 Kontaktformular** - Vollständiges HTML-Formular (Demonstrationszwecke)
+- **🗺️ Interaktive Karten** - Leaflet-basierte Karten mit markierten Lebensräumen
+- **📑 Zitate mit Quellenangaben** - Verlinkung zu Expertenquellen im Impressum
 
 ### CSS-Techniken:
 - **CSS Grid & Flexbox** - Aktuelle Layout-Systeme
 - **Media Queries** - Responsive Breakpoints für verschiedene Bildschirmgrößen
+- **Border-Radius & Transitions** - Moderne Gestaltungselemente
+- **Box-Shadows** - Tiefeneffekte für Cards und Elemente
 - **Strukturierte Klassennamen** - Übersichtliche Namenskonventionen
 
 ### HTML-Elemente:
 - Überschriftenstruktur (h1-h6)
 - Listen und verschachtelte Listen
 - Tabellen mit Formatierung
+- Blockquotes mit Quellenangaben
 - Semantic HTML5 Tags (header, nav, main, section, footer)
 - Links inkl. E-Mail-Links (mailto:)
 - Container-Struktur mit sinnvollen Klassennamen
 
+### JavaScript-Features:
+- **Leaflet.js Integration** - Interaktive Kartenfunktionalität
+- **Marker-basierte Lebensraumdarstellung** - Farbcodierte Schutzgebiete
+- **Pop-up Informationen** - Detaillierte Gebietsinformationen
+- **Responsive Kartendarstellung** - Anpassung an verschiedene Bildschirmgrößen
+
 ## ⚠️ Bekannte Limitierungen
 
 ### Aktuelle Einschränkungen:
-- **Karten-Integration**: Platzhalter statt echter Google Maps/OpenStreetMap
-- **Kontaktformular**: HTML-Struktur vorhanden, aber Backend-Funktionalität fehlt
-- **JavaScript**: Keine interaktiven Features (reine HTML/CSS-Lösung)
+- **Kontaktformular**: HTML-Struktur vorhanden, aber Backend-Funktionalität fehlt (nur Demonstrationszwecke)
+- **Bildergalerien**: Statische Darstellung ohne JavaScript-Lightbox
+- **Offline-Funktionalität**: Karten benötigen Internetverbindung
 
 ## 🚀 Ideen für Weiterentwicklung
-- 🗺️ **Interactive Karten** mit Google Maps API oder OpenStreetMap
-- ⚡ **JavaScript-Funktionalität** für Kontaktformular und Bildergalerien
-- 🔍 **Suchfunktion** für Artinformationen
+- 💡 **Lightbox-Galerie** für Bildansichten
+- 📊 **Diagramme** für Populationsdaten
+- 🎵 **Audio-Features** für Tierstimmen
 
 ## 🛠️ Technische Umsetzung
 
 ### Verwendete Technologien:
 - **HTML5** - Semantische Strukturierung
 - **CSS3** - Styling und responsive Design
+- **JavaScript** - Interaktive Kartenfunktionalität mit Leaflet.js
 - **Git** - Versionskontrolle
 - **GitHub Pages** - Hosting der Live-Website
 
 ### Entwicklungsumgebung:
-- **VS Code** - Code-Editor mit HTML/CSS Extensions
+- **VS Code** - Code-Editor mit HTML/CSS/JavaScript Extensions
 - **Live Server** - Lokaler Entwicklungsserver für Tests
+- **Leaflet.js** - Open-Source Kartenbibliothek
+- **OpenStreetMap** - Freie Geodaten
 
 ---
 
-*24.09.2025*
+*01.10.2025*

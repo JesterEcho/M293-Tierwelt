@@ -65,7 +65,6 @@ projekt-tierwelt/
 - **code.makery Tutorial** - Grundlagen für HTML/CSS Entwicklung
 
 ### Design & Assets:
-- **Unicode-Emojis** - Für symbolische Darstellungen (lizenzfrei)
 - **System-Schriftarten** - Arial, sans-serif (systemabhängig)
 - **CSS-Farben** - Selbst definierte Farbpalette
 - **Pexels** (pexels.com) - Kostenlose, lizenzfreie Tierfotos
